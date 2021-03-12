@@ -49,14 +49,11 @@ public abstract class Conta {
 		if (deposito < 0) {
 			throw new IllegalArgumentException("Saldo a ser depositado deve ser positivo");
 		}
-		this.saldo += deposito;
+		debitar(deposito);
 	}
 	
 	public void transferir(Double valor, Conta contaDestino) throws SaldoInsuficienteException {
-		if (!this.temSaldo(valor)) {
-			throw new SaldoInsuficienteException("Saldo insuficiente para realizar a transferência");
-		}
+		sacar(valor);
 		contaDestino.depositar(valor);
-		this.saldo -= valor;
 	}
 }

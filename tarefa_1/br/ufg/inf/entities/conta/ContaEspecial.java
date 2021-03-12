@@ -1,7 +1,6 @@
 package br.ufg.inf.entities.conta;
 
 import br.ufg.inf.entities.pessoa.Pessoa;
-import br.ufg.inf.exceptions.SaldoInsuficienteException;
 
 public class ContaEspecial extends Conta {
 	
