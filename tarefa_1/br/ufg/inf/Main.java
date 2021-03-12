@@ -1,6 +1,5 @@
 package br.ufg.inf;
 
-import br.ufg.inf.entities.conta.Conta;
 import br.ufg.inf.entities.conta.ContaEspecial;
 import br.ufg.inf.entities.conta.ContaPoupanca;
 import br.ufg.inf.entities.pessoa.PessoaFisica;

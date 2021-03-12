@@ -1,6 +1,6 @@
 package br.ufg.inf.entities.pessoa;
 
-public class Pessoa {
+public abstract class Pessoa {
 	private Integer id;
 	private String nome;
 	private String endereco;
