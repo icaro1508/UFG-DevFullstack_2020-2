@@ -18,15 +18,12 @@ public class aplication {
 		System.out.println("Começando por aqui");
 
 		TesteApp testeApp = new TesteApp();
-//		PessoaCtrl pessoaCtrl = new PessoaCtrl();
-//		pessoaCtrl.inserir(new Pessoa(null, "Icaro", 12312312312L, new SimpleDateFormat("yyyy/MM/dd").parse("1995/08/15")));
-//		pessoaCtrl.inserir(new Pessoa(null, "Icaro2", 12312312313L, new SimpleDateFormat("yyyy/MM/dd").parse("1995/08/15")));
-//		testeApp.testeCrudDisciplina(new DisciplinaCtrl());
-//		testeApp.testeCrudPessoa(new PessoaCtrl());
-//		testeApp.testeCrudProfessor(new ProfessorCtrl(), new PessoaCtrl());
-//		testeApp.testeCrudOferta(new OfertaCtrl(), new DisciplinaCtrl(), new ProfessorCtrl());
-//		testeApp.testeCrudCurso(new CursoCtrl());
-//		testeApp.testeCrudAluno(new AlunoCtrl(), new PessoaCtrl(), new CursoCtrl());
+		testeApp.testeCrudDisciplina(new DisciplinaCtrl());
+		testeApp.testeCrudPessoa(new PessoaCtrl());
+		testeApp.testeCrudProfessor(new ProfessorCtrl(), new PessoaCtrl());
+		testeApp.testeCrudOferta(new OfertaCtrl(), new DisciplinaCtrl(), new ProfessorCtrl());
+		testeApp.testeCrudCurso(new CursoCtrl());
+		testeApp.testeCrudAluno(new AlunoCtrl(), new PessoaCtrl(), new CursoCtrl());
 		testeApp.testeCrudMatricula(new MatriculaCtrl(), new AlunoCtrl(), new OfertaCtrl());
 	}
 	
